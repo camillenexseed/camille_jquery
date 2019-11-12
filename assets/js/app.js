@@ -49,4 +49,17 @@ $(function () {
       .siblings()
       .slideToggle();
   });
+
+  //ハンバーガーメニュー
+  $(".js-hamburger").on("click", function () {
+    $(this).toggleClass("on");
+  });
+
+  //スムーススクロール
+  $(".js-scroll").on("click", function () {
+    $("body, html").animate(
+      { scrollTop: 0, paddingLeft: '1000px' }, 10000);
+    // height
+    // width
+  });
 });
